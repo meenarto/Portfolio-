@@ -1,0 +1,88 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - Studio Yasmeen</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <div class="logo-container"></div>
+      <a href="student.html">
+        <img src="image/logo.jpg" alt="Studio Yasmeen Logo" class="logo-image">
+      </a>
+    </div>
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="achievements-skills.html" class="nav-link active">Achievements & Skills</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+ 
+  <header class="hero animated-header">
+    <h1 class="fade-in-up">About Me</h1>
+    <p class="fade-in-up delay">Learn More About Who I Am</p>
+  </header>
+  
+  \
+  <main class="container">
+    <section class="section animate-on-scroll">
+      <div class="section-header">
+        <h2 class="section-title">Ain'nur Yasmeen</h2>
+        <p class="section-subtitle">Personal and Academic Background</p>
+      </div>
+      <div class="profile-section">
+        <img src="image/profile.jpg" alt="Yasmeen's Profile Photo" class="profile-image"/>
+        <div class="profile-content">
+          <p>Hello! I'm Ain'nur Yasmeen, currently pursuing BACHELOR DEGREE (HONS.) INFORMATION CONTENT MANAGEMENT at Universiti Teknologi MARA (UiTM). My academic and creative journey reflects my passion for communication, design, and digital storytelling. I believe in using digital platforms to inspire and engage with people meaningfully.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section animate-on-scroll">
+      <div class="section-title">
+        <img src="image/education-icon.png" alt="Education Icon" class="section-icon"/>
+        Academic Background
+      </div>
+      <p>I completed my Diploma in Science Secretarial with distinction, actively participating in campus events. Currently, I am expanding my digital capabilities through design, UX/UI, and multimedia production.</p>
+    </section>
+
+    <section class="section animate-on-scroll">
+      <div class="section-title">
+        <img src="image/skill-icon.png" alt="Skills Icon" class="section-icon"/>
+        Professional Interests
+      </div>
+      <p>I am passionate about visual branding, user experience design, and motion graphics. My goal is to produce content that is not only aesthetically pleasing but also impactful and accessible.</p>
+    </section>
+
+    <section class="section animate-on-scroll">
+      <div class="section-title">
+        <img src="image/goal-icon.png" alt="Future Goals Icon" class="section-icon"/>
+        Future Goals
+      </div>
+      <p>My future vision includes becoming a digital strategist or creative director. I aim to merge creativity with strategy to develop innovative media experiences that tell meaningful stories.</p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Studio Yasmeen. All rights reserved.</p>
+  </footer>
+
+  <!-- Optional JavaScript for Animation -->
+  <script>
+    const sections = document.querySelectorAll(".animate-on-scroll");
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("animated");
+        }
+      });
+    });
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+  </script>
+</body>
+</html>

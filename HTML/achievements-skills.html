@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Achievements & Skills - Studio Yasmeen</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="logo-container">
+      <a href="student.html">
+        <img src="image/logo.jpg" alt="Studio Yasmeen Logo" class="logo-image" />
+      </a>
+    </div>
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="achievements-skills.html" class="nav-link active">Achievements & Skills</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <header class="hero animated-header">
+    <h1 class="fade-in-up">Achievements & Skills</h1>
+    <p class="fade-in-up delay">"Success is the sum of small efforts, repeated day in and day out." — Robert Collier</p>
+  </header>
+
+  <main>
+    <!-- Achievements Section -->
+    <section class="section animate-on-scroll">
+      <h2 class="section-title">Achievements</h2>
+      <div class="cards-grid">
+        <div class="card">
+          <h3>Dean's List Award</h3>
+          <p>Recognized for academic excellence multiple semesters in a row in Politeknik Port Dickson.</p>
+        </div>
+        <div class="card">
+          <h3>Full Attendance in High School Award</h3>
+          <p>Fully attended all classes in SMK Damansara Damai 1 during Form 5 and received a special award.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section animate-on-scroll">
+      <h2 class="section-title">Skills</h2>
+      <div class="cards-grid">
+        <div class="card">
+          <h3>HTML & CSS</h3>
+          <p>Strong understanding of modern web layout and styling techniques.</p>
+        </div>
+        <div class="card">
+          <h3>Adobe Suite</h3>
+          <p>Proficient in Photoshop, Illustrator, and Premiere Pro for design and editing.</p>
+        </div>
+        <div class="card">
+          <h3>Team Leadership</h3>
+          <p>Experience leading student teams for academic and creative group projects.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Studio Yasmeen. All rights reserved.
+  </footer>
+
+  <!-- Scroll Animation Script -->
+  <script>
+    const scrollElements = document.querySelectorAll('.animate-on-scroll');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animated');
+        }
+      });
+    });
+    scrollElements.forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
